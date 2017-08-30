@@ -1,0 +1,19 @@
+[req]
+distinguished_name = req_distinguished_name
+x509_extensions = v3_req
+prompt = no
+[req_distinguished_name]
+C = US
+ST = CA
+L = San Diego
+O = Utiliware Corp
+OU = IT
+CN = www.utiliware.com
+[v3_req]
+keyUsage = keyEncipherment, dataEncipherment
+extendedKeyUsage = serverAuth
+subjectAltName = @alt_names
+[alt_names]
+DNS.1 = www.utiliware.com
+DNS.2 = utiliware.com
+DNS.3 = utiliware.net
